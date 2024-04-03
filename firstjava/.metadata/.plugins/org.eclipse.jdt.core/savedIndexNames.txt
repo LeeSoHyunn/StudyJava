@@ -1,0 +1,10 @@
+INDEX VERSION 1.134+D:\주간_삭제X\AWSDEVELOP\firstjava\.metadata\.plugins\org.eclipse.jdt.core
+1546870637.index
+1865797976.index
+1054795987.index
+653369663.index
+305642741.index
+404143305.index
+2291462914.index
+2153410812.index
+4093668414.index
