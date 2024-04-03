@@ -7,6 +7,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\주간_삭제X\java study\firstjava"/>
 			<item value="D:\주간_삭제X\firstjava"/>
 			<item value="C:\Users\tjoen\Desktop\firstjava"/>
 			<item value="D:\주간_삭제X\AWSDEVELOP\firstjava"/>
@@ -23,6 +24,14 @@
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
 			<item value="D:\주간_삭제X\AWSDEVELOP\firstjava"/>
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="670"/>
+		<item key="DIALOG_Y_ORIGIN" value="258"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
 		</list>
 	</section>
 </section>
