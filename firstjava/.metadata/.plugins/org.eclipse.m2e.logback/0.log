@@ -5,3 +5,4 @@
 2024-04-03 14:00:23,119 [Framework stop - Equinox Container: 1be3551a-5ff7-4337-9d73-6fc158581e82] WARN  org.eclipse.jgit.lib.Repository - close() called when useCnt is already zero for Repository[D:\주간_삭제X\firstjava\.git]
 2024-04-03 14:21:56,716 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2024-04-03 14:24:38,413 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-04-04 09:39:05,099 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
