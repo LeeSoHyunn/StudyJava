@@ -9,6 +9,9 @@ Double hei = Double.parseDouble(request.getParameter("hei"));
 Double wei = Double.parseDouble(request.getParameter("wei"));
 
 double bmi = wei / (hei/100 * hei/100); 
+
+//소수점 2자리까지만
+bmi = (int)(bmi*100) / 100.0;
 %>
 <!DOCTYPE html>
 <html>
@@ -26,6 +29,7 @@ double bmi = wei / (hei/100 * hei/100);
       -> String형식으로 넘어가기 떄문에 Integer.parseInt(값)-> Double.parseDouble(값)
       화면에 이름, 키, 몸무게 BMI지수를 출력
       if을 통해 BMI지수가 25이상 과체중, 18 이하라면 저체중, 나머지는 정상으로 출력 -->
+    
 	이름:<%=name %><br>
 	키:<%=hei %><br>
 	몸무게:<%=wei %><br>
