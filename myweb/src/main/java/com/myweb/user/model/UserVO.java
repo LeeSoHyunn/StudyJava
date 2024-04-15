@@ -4,8 +4,8 @@ import java.sql.Timestamp;
 
 public class UserVO {
 	private String id;
-	private String name;
 	private String pw;
+	private String name;
 	private String email;
 	private String address;
 	private Timestamp regdate;
@@ -15,11 +15,11 @@ public class UserVO {
 		// TODO Auto-generated constructor stub
 	}
 
-	public UserVO(String id, String name, String pw, String email, String address, Timestamp regdate) {
+	public UserVO(String id, String pw, String name, String email, String address, Timestamp regdate) {
 		super();
 		this.id = id;
-		this.name = name;
 		this.pw = pw;
+		this.name = name;
 		this.email = email;
 		this.address = address;
 		this.regdate = regdate;
