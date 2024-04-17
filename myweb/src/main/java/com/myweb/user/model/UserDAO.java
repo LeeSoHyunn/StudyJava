@@ -9,7 +9,7 @@ import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.sql.DataSource;
 
-import com.myweb.util.JDBCUtil;
+import com.myweb.util.JdbcUtil;
 
 public class UserDAO {
 
@@ -87,7 +87,7 @@ public class UserDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			JDBCUtil.close(conn, pstmt, rs);
+			JdbcUtil.close(conn, pstmt, rs);
 		}
 		return result;
 	}
@@ -113,7 +113,7 @@ public class UserDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			JDBCUtil.close(conn, pstmt, rs);
+			JdbcUtil.close(conn, pstmt, rs);
 		}
 		return result;
 	}
@@ -146,7 +146,7 @@ public class UserDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			JDBCUtil.close(conn, pstmt, rs);
+			JdbcUtil.close(conn, pstmt, rs);
 		}
 		return vo;
 	}
@@ -175,7 +175,7 @@ public class UserDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			JDBCUtil.close(conn, pstmt, rs);
+			JdbcUtil.close(conn, pstmt, rs);
 		}
 		return result;
 
@@ -202,7 +202,7 @@ public class UserDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			JDBCUtil.close(conn, pstmt, rs);
+			JdbcUtil.close(conn, pstmt, rs);
 		}
 		return result;
 

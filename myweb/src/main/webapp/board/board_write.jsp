@@ -1,12 +1,5 @@
-<%@page import="com.myweb.util.PageVO"%>
-<%@page import="com.myweb.board.model.BoardVO"%>
-<%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
-<%
-	ArrayList<BoardVO> list = (ArrayList<BoardVO>)request.getAttribute("list");
-%>    
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,44 +30,48 @@
 <body>
 	<%@ include file="../include/header.jsp" %>
 	
-	<div class ="container">
-		<h3 align="center">MyWeb 게시판</h3>
-		<table class ="table table-bordered">
-		<thead>
-			<tr>
-				<th>글 번호</th>
-				<th>작성자</th>
-				<th>제목</th>
-				<th>날짜</th>
-				<th>조회수</th>
-			</tr>
-			</thead>
-			<tbody>
-			<%for(BoardVO vo: list){ %>
-			<tr>
-					<td><%=vo.getNum() %></td>
-					<td><%=vo.getWriter() %></td>
-					<td><a href="content.board?num=<%=vo.getNum() %>"><%=vo.getTitle() %></a></td>
-					<td><%=vo.getRegdate() %></td>
-					<td><%=vo.getRegdate() %></td>
-				</tr>
-				<%} %>
-			</tbody>
-		</table>
-		<%PageVO pageVO = (PageVO) request.getAttribute("pageVO"); %>
+	<section>
 		<div align="center">
-			<ul class="pagination pagination-sm">
-				<li><a href="">이전</a></li>
-				<%for(int i= pageVO.getStartPage(); i<= pageVO.getEndPage(); i++) { %>
-				<li><a href=""><%=i %></a></li>
-				<%} %>
-				<li><a href="">다음</a></li>
-			</ul>
+			<form name="regform" action="register.board" method="post">
+				<h2>게시판 글작성 페이지</h2>
+				<hr>
+				<table border="1" style="width:500px">
+					<tr>
+						<td>작성자</td>
+						<td><input type="text" name="writer" size="10"></td>
+					</tr>
+					<tr>
+						<td>글제목</td>
+						<td><input type="text" name="title"></td>
+					</tr>					<tr>
+						<td>글내용</td>
+						<td><textarea name="content" rows="10" style="width:100%"></textarea></td>
+					</tr>
+					<td>
+					<td colspan="2" align="center">
+						<input type="button" value="등록" onclick="registCheck()">
+						<input type="button" value="목록" onclick="location.href='list.board'">
+					</td>
+				</table>
+			</form>
 		</div>
-	</div>
-	        
+	</section>
 	<%@ include file="../include/footer.jsp" %> 
  
+ 	<script type="text/javascript">
+ 		function registCheck() {
+ 			//작성자, 글제목에 공백확인, 공백이 아니라면 submit() 처리
+ 			if(document.regform.writer.value == "" ){
+ 				alert("작성자를 입력하세요");
+ 				return;
+ 			}else if(document.regform.title.value == "" ){
+ 				alert("제목을 입력하세요");
+ 				return;
+ 			}else if(confirm("게시글을 등록하겠습니까?")){
+ 				document.regform.submit();
+ 			}
+ 		}
+ 	</script>
  
 </body>
 </html>
